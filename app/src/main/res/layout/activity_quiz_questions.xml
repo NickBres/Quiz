@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizQuestionsActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/backgroundblack"
+        android:padding="10dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            tools:text="What country is country is it or what is it not country in this country"/>
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginHorizontal="10dp"
+            tools:src="@drawable/paris_image"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_weight="1"
+                tools:progress="10"
+                android:progressTint="@color/red"
+                android:progressBackgroundTint="@color/yellow"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:id="@+id/tv_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0/0"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+              />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_option_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Answer 1"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:background="@drawable/button_back"
+            android:layout_marginHorizontal="10dp"
+           />
+
+        <TextView
+            android:id="@+id/tv_option_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Answer 2"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:background="@drawable/button_back"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_option_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Answer 3"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:background="@drawable/button_back"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_option_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Answer 4"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:background="@drawable/button_back"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:backgroundTint="@color/blue"
+            android:layout_marginTop="20dp"
+             />
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
